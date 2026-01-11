@@ -236,12 +236,9 @@ pytest
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Authors
+## Author
 
 - **Suriya Sureshkumar** - [suriyasureshkumarkannian@gmail.com](mailto:suriyasureshkumarkannian@gmail.com)
-- **Ivan Nilash X** - [ivannilash1206@gmail.com](mailto:ivannilash1206@gmail.com)
-
-*Both authors contributed equally to this work.*
 
 ## Acknowledgments
 

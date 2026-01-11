@@ -7,8 +7,7 @@ name = "rlam"
 version = "0.1.0"
 description = "Reproducibility-constrained execution framework for Large Action Models"
 authors = [
-    { name = "Suriya Sureshkumar", email = "suriyasureshkumarkannian@gmail.com"},
-    { name = "Ivan Nilash X", email = "ivannilash1206@gmail.com"}
+    { name = "Suriya Sureshkumar", email = "suriyasureshkumarkannian@gmail.com"}
 ]
 readme = "README.md"
 license = { text = "MIT" }
