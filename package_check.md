@@ -202,7 +202,7 @@ rlam/
 
 ---
 
-### - [ ] Example 1: Linear success workflow
+### - [x] Example 1: Linear success workflow
 
 **WHAT:** A1 → A2 → A3
 **WHY:** Baseline reproducibility
