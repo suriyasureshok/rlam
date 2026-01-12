@@ -20,3 +20,21 @@ R-LAM treats execution as first-class data. The core invariant is that
 an action that is not logged is treated as non-existent. All operations
 preserve provenance and enable auditability.
 """
+
+from rlam.action import Action
+from rlam.executor import execute_action, ExecutionResult
+from rlam.trace import ExecutionTrace
+from rlam.replay import replay_action
+from rlam.fork import fork_trace
+
+__author__ = "Suriya Sureshkumar"
+__copyright__ = "2026, Suriya Sureshkumar"
+__version__ = "0.1.0"
+__all__ = [
+    "Action",
+    "ExecutionResult",
+    "execute_action",
+    "ExecutionTrace",
+    "replay_action",
+    "fork_trace",
+]
