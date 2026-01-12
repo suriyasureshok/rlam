@@ -4,7 +4,7 @@ from rlam.trace import ExecutionTrace
 from rlam.fork import fork_trace
 from rlam.replay import replay_action
 from rlam.utils import compute_environment_hash
-from datetime import datetime
+from datetime import datetime, timezone
 
 
 def run_fork_workflow():
@@ -44,7 +44,7 @@ def run_fork_workflow():
         inputs={"path": "dummy.csv"},
         parameters={},
         environment_hash=env_hash,
-        timestamp=datetime.utcnow()
+        timestamp=datetime.now(timezone.utc)
     )
     r1 = execute_action(a1, load_data)
     original_trace.add_result(r1)
@@ -55,7 +55,7 @@ def run_fork_workflow():
         inputs={"data": r1.output},
         parameters={},
         environment_hash=env_hash,
-        timestamp=datetime.utcnow()
+        timestamp=datetime.now(timezone.utc)
     )
     r2 = execute_action(a2, preprocess)
     original_trace.add_result(r2, parents=["A1"])
@@ -66,7 +66,7 @@ def run_fork_workflow():
         inputs={"data": r2.output},
         parameters={"lr": 0.01},
         environment_hash=env_hash,
-        timestamp=datetime.utcnow()
+        timestamp=datetime.now(timezone.utc)
     )
     r3 = execute_action(a3, train_model)
     original_trace.add_result(r3, parents=["A2"])
@@ -81,7 +81,7 @@ def run_fork_workflow():
         inputs={"data": replayed_data},
         parameters={"lr": 0.001},
         environment_hash=env_hash,
-        timestamp=datetime.utcnow()
+        timestamp=datetime.now(timezone.utc)
     )
     r3_prime = execute_action(a3_prime, train_model)
     forked_trace.add_result(r3_prime, parents=["A2"])

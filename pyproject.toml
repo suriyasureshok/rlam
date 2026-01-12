@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "rlam"
 version = "0.1.0"
-description = "Reproducibility-constrained execution framework for Large Action Models"
+description = "Reproducibility-constrained execution framework for Large Action Models (Research Artifact)"
 authors = [
     { name = "Suriya Sureshkumar", email = "suriyasureshkumarkannian@gmail.com"}
 ]
