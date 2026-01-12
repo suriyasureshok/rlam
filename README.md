@@ -186,6 +186,10 @@ rlam/
 │   ├── workflow_failure.py # Failure + recovery workflow
 │   └── workflow_fork.py   # Replay and forking workflow
 ├── tests/                 # Test suite
+│   ├── test_action.py     # Action schema tests
+│   ├── test_invariants.py # Core invariant tests
+│   ├── test_trace.py      # Trace store tests
+│   ├── test_replay.py     # Replay tests
 ├── pyproject.toml         # Package configuration
 ├── LICENSE                # MIT License
 └── README.md              # This file
