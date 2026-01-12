@@ -237,6 +237,8 @@ If you use R-LAM in your research, please cite:
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
+Check out the [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+
 ### Development Setup
 
 ```bash
